@@ -1,0 +1,73 @@
+.container {
+  display: flex;
+  float: right;
+  flex-direction: column;
+  margin-right: 10px;
+  overflow: hidden;
+  position: relative;
+  
+  img {
+    width: 500px;
+    margin-top: 40px;
+    margin-right: 20px;
+    // animation
+    transition: 1s all;
+    box-shadow: 10px 10px 10px rgba($color: grey, $alpha: 1.0);
+    
+
+    &:hover {
+      transform: scale(1.1, 1.1);
+      transition: 1s all;
+    }
+
+    &.medaka {
+      margin-bottom: 20px;
+    }
+
+    &.plants {
+      margin-bottom: 20px;
+    }
+
+    &.ikusei {
+      margin-bottom: 50px;
+      height: 400px;
+    }
+  }
+  a {
+    text-decoration: none;
+    color: black;
+    position: absolute;
+    background-color: grey;
+    padding: 20px;
+    border: 2px solid wheat;
+    border-radius: 20px;
+    background-position: 0 0;
+    background-size: 200% auto;
+    transition: .3s;
+    font-weight: bold;
+
+    &:hover {
+      background-position: -100% 0;
+      color: #fff;
+    }
+
+
+    &.medaka_detail {
+      top: 280px;
+      right: 200px;
+      background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 50%, rgb(63, 178, 231) 50%);
+    }
+    
+    &.plants_detail {
+      top: 700px;
+      right: 200px;
+      background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 50%, rgb(81, 194, 100) 50%);
+    }
+
+    &.ikusei_detail {
+      top: 1100px;
+      right: 200px;
+      background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 50%, rgb(22, 161, 216) 50%);
+    }
+  }
+}

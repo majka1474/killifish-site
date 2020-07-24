@@ -1,0 +1,71 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 1rem;
+  border-bottom: 1px dotted #ccc;
+  background-color: cornflowerblue;
+
+  ul {
+    display: flex;
+    list-style: none;
+  }
+
+  a {
+    text-decoration: none;
+    color: white;
+  }
+
+  li {
+    display: inline-block;
+    margin-top: 10px;
+    margin-right: 15px;
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 23px;
+    background-color: grey;
+
+    button {
+      background-color: grey;
+      text-decoration: none;
+      color: white;
+      border: none;
+
+      &:hover {
+        cursor: pointer;
+      }
+      // クリック時の枠消し
+      &:focus {
+        outline: 0;
+      }
+    }
+  }
+
+  a.title {
+    color: black;
+    font-weight: bold ;
+    position: relative;
+    top: 10px;
+    left: 30px;
+    font-size: 2rem;
+    border: none;
+  }
+}
+
+
+// a {
+//   text-decoration: none;
+// }
+
+// header li a {
+
+// }
+// header a.title {
+//   color: black;
+//   font-weight: bold ;
+//   position: relative;
+//   top: 5px;
+//   left: 30px;
+//   font-size: 2rem;
+//   border: none;
+// }

@@ -1,73 +1,26 @@
 <template>
   <div class="container">
-    <div>
-      <Logo />
-      <h1 class="title">
-        killifish-site
-      </h1>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--green"
-        >
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--grey"
-        >
-          GitHub
-        </a>
-      </div>
-    </div>
+    <img src="../assets/img/medaka.jpg" alt="メダカの画像" class="medaka">
+    <nuxt-link to="/medaka_detail" class="medaka_detail">メダカの詳細へ</nuxt-link>
+    <img src="../assets/img/plants.jpg" alt="水草の画像" class="plants">
+    <nuxt-link to="/plants_detail" class="plants_detail">水草の詳細へ</nuxt-link>
+    <img src="../assets/img/ikusei.jpg" alt="育成の画像" class="ikusei">
+    <nuxt-link to="/ikusei_detail" class="ikusei_detail">メダカの育て方</nuxt-link>
   </div>
 </template>
 
 <script>
+// import scss 
+import "~/assets/css/container_img.scss"
+
 export default {}
 </script>
 
 <style>
-.container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.title {
-  font-family:
-    'Quicksand',
-    'Source Sans Pro',
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    Roboto,
-    'Helvetica Neue',
-    Arial,
-    sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
 
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
-}
 </style>
